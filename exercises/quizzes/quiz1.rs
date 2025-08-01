@@ -10,10 +10,18 @@
 
 // TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
-// fn calculate_price_of_apples(???) -> ??? { ??? }
+fn calculate_price_of_apples(q: u64) -> u64 { 
+    let mut  p = 2;
+    if q > 40 {
+        p = 1;
+    } 
+    let tp: u64 = p*q;
+    tp
+ }
 
 fn main() {
     // You can optionally experiment here.
+    
 }
 
 // Don't change the tests!
