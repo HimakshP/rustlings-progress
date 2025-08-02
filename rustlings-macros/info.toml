@@ -42,6 +42,7 @@ You might need to press ENTER after typing `n`."""
 name = "intro2"
 dir = "00_intro"
 test = false
+skip_check_unsolved = true
 hint = """
 The compiler is informing us that we've got the name of the print macro wrong.
 It also suggests an alternative."""
