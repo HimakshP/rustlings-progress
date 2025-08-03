@@ -7,6 +7,16 @@ struct Point {
 #[derive(Debug)]
 enum Message {
     // TODO: Define the different variants used below.
+    Resize {
+        height: u8,
+        width: u8
+    },//a struct 
+    Point { x: u8, y: u8 },// a custom type having fields
+    Move (Point),// a wrapper of Point
+    Echo(String),// a String
+    ChangeColor (u64, u64, u64),// a tuple
+    Quit// a no value variant
+
 }
 
 impl Message {
